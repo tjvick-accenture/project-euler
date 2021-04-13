@@ -29,6 +29,6 @@ end
 v3()
 
 ## Print an answer
-println("Attempt 1: ", v1())
-println("Attempt 2: ", v2())
-println("Attempt 3: ", v3())
+println(@elapsed println("V1: ", v1()))
+println(@elapsed println("V2: ", v2()))
+println(@elapsed println("V3: ", v3()))

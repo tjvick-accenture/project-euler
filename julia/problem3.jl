@@ -46,9 +46,9 @@ v3(testtarget)
 v3(realtarget)
 
 ##
-println("Attempt 1: ", v1(realtarget))
-println("Attempt 2: ", v2(realtarget))
-println("Attempt 3: ", v3(realtarget))
+println(@elapsed println("V1: ", v1(realtarget)))
+println(@elapsed println("V2: ", v2(realtarget)))
+println(@elapsed println("V3: ", v3(realtarget)))
 
 ## Another test
 v1(84)
