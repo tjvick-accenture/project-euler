@@ -21,7 +21,8 @@ function v1()
   maxpalindrome
 end
 
-v1()
+println("V1: ", v1())
+@time v1()
 
 ## Attempt 2: Skip non-candidates in second for-loop
 function v2()
@@ -44,7 +45,8 @@ function v2()
   maxpalindrome
 end
 
-v2()
+println("V2: ", v2())
+@time v2()
 
 ## Attempt 3: Begin at max end; short-circuit loops; only search upper triangle of multiplication table
 function v3()
@@ -65,7 +67,8 @@ function v3()
   end
 end
 
-v3()
+println("V3: ", v3())
+@time v3()
 
 ## Attempt 4: Make palindromes first
 function isProduct(palindrome)
@@ -92,10 +95,5 @@ function v4()
   end
 end
 
-v4()
-
-## Print and Summarize
-println(@time println("V1: ", v1()))
-println(@time println("V2: ", v2()))
-println(@time println("V3: ", v3()))
-println(@time println("V4: ", v4()))
+println("V4: ", v4())
+@time v4()
